@@ -65,6 +65,11 @@
 }
 
 - (UIImage *)getImage {
+    NSArray *images = @[@"Splash1", @"Splash2", @"Splash3", @"Splash4"];
+    uint32_t rnd = arc4random_uniform([images count]);
+    NSString *randomImage = [images objectAtIndex:rnd];
+    return [UIImage imageNamed:randomImage];
+
     if(_config.dynamicShow) {
         UIImage * localImage = [FileUtils loadImage:_fileName inDirectory:_config.splashSavePath];
         // NSArray *file = [[[NSFileManager alloc] init] subpathsAtPath:documentsDirectoryPath];
