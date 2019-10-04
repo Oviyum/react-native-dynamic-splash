@@ -11,5 +11,5 @@
         android:layout_height="match_parent"
         android:background="@android:color/holo_blue_dark"
         android:scaleType="fitXY"
-        android:src="@android:drawable/splash4" />
+        android:src="@drawable/splash4" />
 </LinearLayout>
